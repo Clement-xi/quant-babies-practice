@@ -3,9 +3,9 @@
 按教程要求将标的设为 TSLA，使用 Yahoo Finance 最近两年日线收盘价计算 MA5、MA20，并绘制金叉 ▲、死叉 ▼ 及持仓区间。
 
 - 数据：501 个交易日，2024-11-14 至 2026-11-13。
-- MA5/MA20：金叉 16 次、死叉 15 次，共 31 次信号。
-- MA10/MA30：金叉 10 次、死叉 9 次，共 19 次信号；比 MA5/MA20 少 12 次（约 39%）。较长窗口更平滑，交叉通常较少，但信号也更滞后。
-- 信号截图：[TSLA_MA5_MA20_signals.png](TSLA_MA5_MA20_signals.png)；次数表：[signal_counts.csv](signal_counts.csv)。
+- MA5/MA20：金叉 15 次、死叉 15 次，共 30 次信号。修正说明：均线预热期为缺失值，不能当作 0 计算初始交叉。
+- MA10/MA30：金叉 9 次、死叉 9 次，共 18 次信号；比 MA5/MA20 少 12 次（40%）。较长窗口更平滑，交叉通常较少，但信号也更滞后。计数时保留滚动均线预热期的缺失值；首次有效均线不算交叉，只有前后两日均线差符号实际改变时才计数。
+- 信号截图：[TSLA_MA5_MA20_signals.png](TSLA_MA5_MA20_signals.png)；次数表：[signal_counts.csv](signal_counts.csv)；固定区间原始收盘价：[TSLA_daily_close.csv](TSLA_daily_close.csv)。
 - 可复现程序：[run_experiment.py](run_experiment.py)，运行 `python run_experiment.py`；需要 pandas、matplotlib 和网络连接。
 
 ## 思考：金叉一定赚钱吗？

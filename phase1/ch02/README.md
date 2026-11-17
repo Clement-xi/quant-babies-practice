@@ -1,18 +1,11 @@
-# 第二章通关：Meta 波动对比
+# 第二章通关：META、AAPL、TSLA 波动比较
 
-- **标的**：Meta Platforms（NASDAQ: META）
-- **区间**：近一年日线，2025-11-10 至 2026-11-13
-- **价格口径**：Yahoo Finance 调整收盘价；日收益率按相邻交易日收盘价百分比变化计算。
-- **样本数**：254 个日收益率观测
-- **平均日收益率**：0.041%
-- **日收益率标准差（波动率）**：2.615%
-- **Histogram**：见 [META_daily_return_histogram.png](META_daily_return_histogram.png)
-- **波动对比图**：见 [META_volatility.png](META_volatility.png)
+## 统一区间的三票比较
 
-## 思考题：Histogram 尾巴很长说明什么？
+使用 2025-11-10 至 2026-11-13 的三只股票调整收盘价，计算相邻收盘价日收益率，按样本标准差比较日波动。META、AAPL、TSLA 各有 254 个收益率观测。比较图见 [volatility_comparison.png](volatility_comparison.png)，精确数据见 [volatility_comparison.csv](volatility_comparison.csv)，对齐后的调整收盘价见 [common_period_adjusted_close.csv](common_period_adjusted_close.csv)。
 
-长尾意味着极端涨跌出现的概率高于正态分布等薄尾模型的预期，日常波动之外仍可能发生大幅跳涨或跳跌。这类股票的收益分布具有较高尾部风险，常见于对消息、财报、监管或行业变化敏感、价格波动较大的公司。标准差只概括典型波动，不能单独描述尾部风险；评估时还应关注极端收益、偏度、峰度和最大回撤。历史分布不保证未来表现。
+META 的日收益率 Histogram 见 [META_daily_return_histogram.png](META_daily_return_histogram.png)。横轴是日收益率，纵轴是交易日频数。长尾表示样本中有少量极端涨跌观测；它提示尾部风险，不能据此保证未来走势。
 
-## 可复现方法
+## 计算口径与复现
 
-取 META 近一年 Yahoo Finance 日线调整收盘价，计算 `Close.pct_change().dropna()`；以样本标准差衡量日波动，以 35 个区间绘制收益率直方图。
+日收益率为 `Close.pct_change()`，波动率为收益率的样本标准差（`std()`）。三票使用完全相同的日期区间。运行 [run_experiment.py](run_experiment.py) 可重新下载并生成三票比较图、Histogram 和 CSV；脚本同步保存最新结果文件。META 日波动率为 2.615%，低于 TSLA 的 2.880%，高于 AAPL 的 1.567%。

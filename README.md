@@ -11,8 +11,8 @@
 
 | 章节 | 内容 | 作业介绍 | 代码 | 图表与数据 |
 |---|---|---|---|---|
-| 第 2 章 | 收益率与波动对比（Meta） | [作业说明](phase1/ch02/README.md) | [实验脚本](phase1/ch02/run_experiment.py) | [收益率 Histogram](phase1/ch02/META_daily_return_histogram.png) · [波动率图](phase1/ch02/META_volatility.png) |
-| 第 3 章 | TSLA 双均线策略信号 | [作业说明](phase1/ch03/README.md) | [实验脚本](phase1/ch03/run_experiment.py) | [金叉/死叉信号图](phase1/ch03/TSLA_MA5_MA20_signals.png) · [信号次数表](phase1/ch03/signal_counts.csv) |
+| 第 2 章 | 收益率与波动对比（Meta） | [作业说明](phase1/ch02/README.md) | [实验脚本](phase1/ch02/run_experiment.py) | [收益率 Histogram](phase1/ch02/META_daily_return_histogram.png) · [三票波动率比较](phase1/ch02/volatility_comparison.png) · [统一区间价格快照](phase1/ch02/common_period_adjusted_close.csv) |
+| 第 3 章 | TSLA 双均线策略信号 | [作业说明](phase1/ch03/README.md) | [实验脚本](phase1/ch03/run_experiment.py) | [金叉/死叉信号图](phase1/ch03/TSLA_MA5_MA20_signals.png) · [信号次数表](phase1/ch03/signal_counts.csv) · [原始收盘价快照](phase1/ch03/TSLA_daily_close.csv) |
 | 第 4 章 | NVDA 策略回测 | [作业说明](phase1/ch04/README.md) | [回测脚本](phase1/ch04/run_backtest.py) | [策略与大盘净值图](phase1/ch04/NVDA_5y_strategy_vs_market.png) · [回撤对比数据](phase1/ch04/drawdown_comparison.csv) |
 
 ### 第二期：风险与组合

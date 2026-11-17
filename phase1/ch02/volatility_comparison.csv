@@ -1,0 +1,4 @@
+﻿Ticker,Company,Return observations,Daily volatility (sample std)
+META,Meta,254,0.02615240
+AAPL,Apple,254,0.01567402
+TSLA,Tesla,254,0.02880217
