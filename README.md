@@ -20,6 +20,7 @@
 | 章节 | 内容 | 作业介绍 | 代码 | 图表与数据 |
 |---|---|---|---|---|
 | 第 5 章 | 年化波动率与收益分布 | [作业说明](phase2/ch05/README.md) | [挑战脚本](phase2/ch05/run_volatility_challenge.py) | [四只股票波动率比较](phase2/ch05/four_stock_volatility.png) · [MSFT 收益率 Histogram](phase2/ch05/MSFT_return_histogram.png) · [八只股票波动率排名](phase2/ch05/annualized_volatility.csv) |
+| 第 6 章 | Sharpe 与 Beta | [作业说明](phase2/ch06/README.md) | — | [Sharpe 排名图](phase2/ch06/sharpe_ranking.png) · [十标的指标与 Beta](phase2/ch06/sharpe_beta_results.csv) · [三年价格快照](phase2/ch06/adjusted_close_3y.csv) |
 
 ## 如何复现实验
 
