@@ -23,6 +23,7 @@
 | 第 5 章 | 年化波动率与收益分布 | [作业说明](phase2/ch05/README.md) | [挑战脚本](phase2/ch05/run_volatility_challenge.py) | [四只股票波动率比较](phase2/ch05/four_stock_volatility.png) · [MSFT 收益率 Histogram](phase2/ch05/MSFT_return_histogram.png) · [八只股票波动率排名](phase2/ch05/annualized_volatility.csv) |
 | 第 6 章 | Sharpe 与 Beta | [作业说明](phase2/ch06/README.md) | — | [Sharpe 排名图](phase2/ch06/sharpe_ranking.png) · [十标的指标与 Beta](phase2/ch06/sharpe_beta_results.csv) · [三年价格快照](phase2/ch06/adjusted_close_3y.csv) |
 | 第 7 章 | 最大回撤与仓位管理 | [作业说明](phase2/ch07/README.md) | [挑战脚本](phase2/ch07/run_position_challenge.py) | [仓位净值比较](phase2/ch07/AAPL_MA10_30_equity.png) · [水下曲线](phase2/ch07/AAPL_MA10_30_underwater.png) · [回撤与恢复数据](phase2/ch07/drawdown_recovery.csv) · [AAPL 行情快照](phase2/ch07/AAPL_3y_adjusted_close.csv) |
+| 第 8 章 | 多标的组合与相关性 | [作业说明](phase2/ch08/README.md) | [挑战脚本](phase2/ch08/run_portfolio_challenge.py) | [相关性热力图](phase2/ch08/correlation_heatmaps.png) · [波动对比图](phase2/ch08/volatility_comparison.png) · [组合与 SPY 净值](phase2/ch08/portfolio_vs_spy.png) · [统计汇总](phase2/ch08/challenge_metrics.csv) · [五年价格快照](phase2/ch08/adjusted_close_common_5y.csv) |
 
 ## 如何复现实验
 
@@ -35,6 +36,7 @@ python phase1/ch03/run_experiment.py
 python phase1/ch04/run_backtest.py
 python phase2/ch05/run_volatility_challenge.py
 python phase2/ch07/run_position_challenge.py
+python phase2/ch08/run_portfolio_challenge.py
 ```
 
 每章的作业说明页包含该章数据区间、计算口径、主要结果和思考题结论。历史数据结果会随运行时间与数据源更新而变化；图表和统计结果仅用于学习，不代表未来表现。
@@ -51,4 +53,5 @@ phase2/
   ch05/  波动率与收益分布
   ch06/  Sharpe 与 Beta
   ch07/  最大回撤与仓位管理
+  ch08/  多标的组合与相关性
 ```
